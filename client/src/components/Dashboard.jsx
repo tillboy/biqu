@@ -20,7 +20,7 @@ const Dashboard = () => {
           title="Panda Touch"
           icon={MonitorPlay}
           url="/api/touch"
-          externalUrl="http://192.168.8.215"
+          externalUrl="http://pandatouch.local"
         />
 
         {/* Panda Status UI */}
@@ -28,7 +28,7 @@ const Dashboard = () => {
           title="Panda Status"
           icon={ActivitySquare}
           url="/api/status"
-          externalUrl="http://192.168.8.194"
+          externalUrl="http://pandastatus.local"
         />
 
         {/* Panda Breath UI */}
@@ -36,7 +36,7 @@ const Dashboard = () => {
           title="Panda Breath"
           icon={Wind}
           url="/api/breath"
-          externalUrl="http://192.168.8.192"
+          externalUrl="http://pandabreath.local"
         />
 
         {/* Panda Knomi UI */}
@@ -44,7 +44,7 @@ const Dashboard = () => {
           title="Panda Knomi"
           icon={Settings}
           url="/api/knomi"
-          externalUrl="http://192.168.8.132"
+          externalUrl="http://pandaknomi.local"
         />
       </div>
     </>

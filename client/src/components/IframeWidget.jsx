@@ -13,13 +13,7 @@ const IframeWidget = ({ title, icon: Icon, url, externalUrl }) => {
       </div>
       
       <div className="iframe-container">
-        <iframe src={url} title={title} sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
-        
-        <div className="iframe-overlay">
-          <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="external-link-btn">
-            Open Web App <ExternalLink size={18} />
-          </a>
-        </div>
+        <iframe src={externalUrl} title={title} sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
       </div>
     </div>
   );

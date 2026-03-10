@@ -342,70 +342,10 @@ input:disabled + .slider {
   height: 100%;
   border: none;
   background: transparent;
-  pointer-events: none;
+  pointer-events: auto; /* Allow direct interaction with the GUI */
 }
 
-.iframe-overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(11, 16, 26, 0.7);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-@media (hover: hover) {
-  .glass-panel:hover .iframe-overlay {
-    opacity: 1;
-  }
-}
-@media (hover: none) {
-  .iframe-overlay {
-    background: rgba(11, 16, 26, 0.2);
-    /* keep link button somehow visible or clickable right away on mobile */
-    opacity: 1; 
-  }
-}
-
-.external-link-btn {
-  pointer-events: auto;
-  padding: 0.8rem 1.8rem;
-  background: linear-gradient(135deg, var(--accent-color) 0%, #3182ce 100%);
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  transform: translateY(20px);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3), inset 0 2px 4px rgba(255,255,255,0.3);
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-@media (hover: hover) {
-  .glass-panel:hover .external-link-btn {
-    transform: translateY(0);
-  }
-}
-@media (hover: none) {
-  .external-link-btn {
-    transform: translateY(0);
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-  }
-}
-
-.external-link-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px var(--accent-glow), inset 0 2px 4px rgba(255,255,255,0.4);
-}
+/* Removed .iframe-overlay and .external-link-btn as they are no longer needed */
 
 /* Animations */
 @keyframes float {
